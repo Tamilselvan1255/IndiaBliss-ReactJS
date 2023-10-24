@@ -20,20 +20,6 @@ const Packages = () => {
         </Navbar>
       </div><br></br>
 
-      {/* <Container>
-          <div className='error-template'>
-          <h1>Oops!</h1>
-        <h2>404</h2>
-        <div className='erro-details'>
-          Sorry, an error has occured. Request page not found!
-        </div>
-        <div className='error-actions'>
-        <Link to="/"><Button>Take me back to Homepage!</Button></Link>
-        </div>
-          </div>
-      </Container> */}
-
-
       <section className='page_404'>
         <Container>
           <Row>
