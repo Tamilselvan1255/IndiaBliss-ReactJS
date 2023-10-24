@@ -50,7 +50,7 @@ function Home() {
         </Navbar>
       </div><br></br>
 
-      <Container className="home">
+      <Container className="home mt-3">
         <Row className="content">
           <Col lg={6}>
             <img id="mainimg" src={require('../assets/Untitled design.png')} />

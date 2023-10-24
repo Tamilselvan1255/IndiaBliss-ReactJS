@@ -49,7 +49,7 @@ const About = () => {
         </Navbar>
       </div><br></br>
 
-      <Container fluid>
+      <Container fluid className='mt-3'>
         <p style={{ textAlign: 'left' }}>
           India is a diverse and culturally rich country located in South Asia. It is the seventh-largest country in the world by land area and the second-most populous country, with over 1.3 billion people (in September 2021).
         </p>

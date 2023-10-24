@@ -46,7 +46,7 @@ const Contact = () => {
         </Navbar>
       </div><br></br>
 
-      <Container style={{maxWidth: '450px', marginTop: '20px', marginBottom: '30px'}}>
+      <Container style={{maxWidth: '450px', marginTop: '70px', marginBottom: '30px'}}>
        <Card>
         <Card.Body>
         <Form>

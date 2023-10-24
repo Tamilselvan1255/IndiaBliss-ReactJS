@@ -45,7 +45,7 @@ const About = () => {
         </Navbar>
       </div><br></br>
 
-      <Container fluid>
+      <Container fluid className='mt-3'>
         <p style={{ textAlign: 'left' }}>India is a beautiful country with many amazing holiday destinations to choose from. Some popular choices among tourists include the Taj Mahal in Agra, the beaches of Goa, the hill stations of Himachal Pradesh and Uttarakhand, the backwaters of Kerala, and the wildlife sanctuaries of Madhya Pradesh and Assam.</p>
         <Row>
           <Col lg={3} id='cards1'>

@@ -26,7 +26,7 @@ const Footer = () => {
                             <span style={{ paddingLeft: '25px', fontSize: '20px' }}><a href="https://www.whatsapp.com/" ><BsWhatsapp /></a></span></center>
                     </div>
                 </Col>
-                <p style={{ fontSize: '15px', textAlign: 'center' }}> © 2023-2025 All Rights Reserved.</p>
+                <p style={{ fontSize: '15px', textAlign: 'center', marginTop: '20px'}}> © 2023-2025 All Rights Reserved.</p>
 
             </Row>
         </div>
