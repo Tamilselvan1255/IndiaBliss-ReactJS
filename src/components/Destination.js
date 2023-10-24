@@ -33,12 +33,12 @@ const About = () => {
                   <Link to="/about">About</Link>
                 </li>
                 <li>
-                  <Link to="/destination">Destination</Link>
+                  <Link to="/destination"><div className="active">Destination</div></Link>
                 </li>
                 <li>
                   <Link to="/contact">Contact</Link>
                 </li>
-                <Button>Book tickets!</Button>
+                <Link to="/packages"><Button>Book tickets!</Button></Link>
               </Nav>
             </Collapse>
           </div>

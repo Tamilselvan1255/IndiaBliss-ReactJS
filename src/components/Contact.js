@@ -37,9 +37,9 @@ const Contact = () => {
                   <Link to="/destination">Destination</Link>
                 </li>
                 <li>
-                  <Link to="/contact">Contact</Link>
+                  <Link to="/contact"><div className="active">Contact</div></Link>
                 </li>
-                <Button>Book tickets!</Button>
+                <Link to="/packages"><Button>Book tickets!</Button></Link>
               </Nav>
             </Collapse>
           </div>

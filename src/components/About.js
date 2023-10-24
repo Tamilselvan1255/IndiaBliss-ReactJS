@@ -13,6 +13,7 @@ import Iframe from "react-iframe";
 import { GrInstagram } from 'react-icons/gr';
 import { BsFacebook, BsTwitter, BsWhatsapp } from 'react-icons/bs';
 import Footer from './Footer';
+import "../App.css"
 
 const About = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -33,7 +34,7 @@ const About = () => {
                   <Link to="/">Home</Link>
                 </li>
                 <li>
-                  <Link to="/about">About</Link>
+                  <Link to="/about"><div className="active">About</div></Link>
                 </li>
                 <li>
                   <Link to="/destination">Destination</Link>
@@ -41,7 +42,7 @@ const About = () => {
                 <li>
                   <Link to="/contact">Contact</Link>
                 </li>
-                <Button>Book tickets!</Button>
+                <Link to="/packages"><Button>Book tickets!</Button></Link>
               </Nav>
             </Collapse>
           </div>

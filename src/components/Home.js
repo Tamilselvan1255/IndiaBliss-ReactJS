@@ -18,19 +18,21 @@ function Home() {
 
   return (
     <div>
+      
       <div style={{
-        display: 'block', width: '100%', maxWidth: '100%',
+        display: 'block', width: '100%', maxWidth: '100%', marginBottom: '3%'
       }}>
-        <Navbar style={{ backgroundColor: '#F2F3F4' }} expand="lg">
+        <Navbar fixed='top' style={{ backgroundColor: '#F2F3F4' }} expand="lg">
           <div className="nav-logo">
             <p style={{ fontSize: '18px', fontFamily: "Playfair Display", color: '#626567', letterSpacing: '5px', margin: '5px' }}><span style={{ color: '#E74C3C' }}>I</span>NDIA <span style={{ color: '#E74C3C' }}>B</span>LISS</p>
+         
           </div>
           <div>
             <NavbarToggler onClick={() => { setIsOpen(!isOpen) }} />
             <Collapse isOpen={isOpen} navbar >
               <Nav className="nav" navbar>
                 <li>
-                  <Link to="/">Home</Link>
+                  <Link to="/"><div className="active">Home</div></Link>
                 </li>
                 <li>
                   <Link to="/about">About</Link>
@@ -41,7 +43,7 @@ function Home() {
                 <li>
                   <Link to="/contact">Contact</Link>
                 </li>
-                <Button>Book tickets!</Button>
+                <Link to="/packages"><Button>Book tickets!</Button></Link>
               </Nav>
             </Collapse>
           </div>
