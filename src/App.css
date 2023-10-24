@@ -1,38 +1,135 @@
-.App {
-  text-align: center;
-}
+  /* color: #626567; Grey */
+  /* color: #333; dark-Grey */
+  /* color: #f2f3f4; whiTe */
+  /* color: #E74C3C; red */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .App {
+    text-align: center;
+    font-family: 'Playfair Display';
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .nav {
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 1rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .nav a {
+    color: inherit;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    padding: .25rem;
+    justify-content: space-between;
   }
-}
+
+  .nav li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+
+  .nav a:active {
+    background-color: #ff0077;
+  }
+
+  .nav a:hover {
+    background-color: #e0dcdc;
+    border-radius: 15%;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    justify-content: space-between;
+  }
+
+  #mainimg {
+    width: 100%;
+  }
+
+  .h1content {
+    margin-bottom: 20px;
+    color: #333;
+    letter-spacing: 2px;
+    font-size: 45px;
+  }
+
+  .h2content {
+    margin-bottom: 20px;
+    color: #333;
+    letter-spacing: 2px;
+    font-size: 45px;
+  }
+
+  @media all and (max-width: 991px) {
+    .home {
+      align-items: start;
+    }
+
+    .h1content {
+      margin-bottom: 5px;
+      font-size: 20px;
+    }
+
+    .h2content {
+      margin-bottom: 8px;
+      font-size: 20px;
+    }
+
+    .pcontent {
+      font-size: 15px;
+    }
+  }
+
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .img {
+    width: 300px;
+    height: 250px;
+  }
+
+  .img1 {
+    width: 70%;
+    border-radius: 3%;
+  }
+
+  #cards {
+    background-color:#FFFFF7;
+    margin-bottom: 1%;
+  }
+
+  #cards1 {
+    margin-bottom: 2%;
+  }
+  .nope {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .icon {
+    height: 20px;
+  }
