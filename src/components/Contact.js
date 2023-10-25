@@ -1,19 +1,20 @@
-import React from 'react'
-import { Card, Col, Container, Row } from 'react-bootstrap';
+import React, { useState } from 'react'
+import { Card, Col, Container, Row, ToastBody, ToastContainer, ToastHeader } from 'react-bootstrap';
 import { Link } from "react-router-dom";
+import { Toast } from 'react-bootstrap';
 import {
   Navbar,
   NavbarToggler,
   Collapse,
   Nav,
 } from "reactstrap"
-import { FcOvertime, FcHome } from "react-icons/fc"
 import { Button } from 'react-bootstrap';
 import Footer from './Footer';
 import Form from 'react-bootstrap/Form';
 
 const Contact = () => {
   const [isOpen, setIsOpen] = React.useState(false);
+  const [show, setShow] = useState(false);
   return (
     <div>
       <div style={{
@@ -46,47 +47,56 @@ const Contact = () => {
         </Navbar>
       </div><br></br>
 
-      <Container style={{maxWidth: '450px', marginTop: '70px', marginBottom: '30px'}}>
-       <Card>
-        <Card.Body>
-        <Form>
-        <Form.Group className="mb-3" controlId="formBasicPassword">
-            <Form.Label style={{display: 'flex', justifyContent: 'left'}}>Fullname</Form.Label>
-            <Form.Control type="text" placeholder="Robert Downey Jr." />
-          </Form.Group>
 
-          <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Label style={{display: 'flex', justifyContent: 'left'}}>Email address</Form.Label>
-            <Form.Control type="email" placeholder="you@awesome.com" />
-            <small><Form.Text className="text-muted" style={{display: 'flex', justifyContent: 'left'}}>
-              We'll never share your email with anyone else.
-            </Form.Text></small>
-          </Form.Group>
+      <Container style={{ maxWidth: '450px', marginBottom: '5px', marginTop: '65px' }}>
+        <Card>
+          <Card.Body>
+            <Form>
+              <Form.Group className="mb-3" controlId="formBasicPassword">
+                <Form.Label style={{ display: 'flex', justifyContent: 'left' }}>Fullname</Form.Label>
+                <Form.Control type="text" placeholder="Robert Downey Jr." />
+              </Form.Group>
 
-          
-          <Form.Group className="mb-3" controlId="formBasicPassword">
-            <Form.Label style={{display: 'flex', justifyContent: 'left'}}>Phone no.</Form.Label>
-            <Form.Control type="number" placeholder="+123456789" />
-            <small><Form.Text className="text-muted" style={{display: 'flex', justifyContent: 'left'}}>
-              We'll never share your phone no. with anyone else.
-            </Form.Text></small>
-          </Form.Group>
+              <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Label style={{ display: 'flex', justifyContent: 'left' }}>Email address</Form.Label>
+                <Form.Control type="email" placeholder="you@awesome.com" />
+                <small><Form.Text className="text-muted" style={{ display: 'flex', justifyContent: 'left' }}>
+                  We'll never share your email with anyone else.
+                </Form.Text></small>
+              </Form.Group>
 
-          <Form.Group className="mb-3" controlId="formBasicPassword">
-            <Form.Label style={{display: 'flex', justifyContent: 'left', color: 'black'}}>Subject</Form.Label>
-           <div style={{display: 'flex', justifyContent: 'left'}}>
-             <textarea style={{width: '100%', height: '70px', resize:'none'}} placeholder='Write here..'>
 
-            </textarea>
-            </div>
-          </Form.Group>
-          <Button variant="primary" type="submit">
-            Submit
-          </Button>
-        </Form>
-        </Card.Body>
-       </Card>
+              <Form.Group className="mb-3" controlId="formBasicPassword">
+                <Form.Label style={{ display: 'flex', justifyContent: 'left' }}>Phone no.</Form.Label>
+                <Form.Control type="number" placeholder="+123456789" />
+                <small><Form.Text className="text-muted" style={{ display: 'flex', justifyContent: 'left' }}>
+                  We'll never share your phone no. with anyone else.
+                </Form.Text></small>
+              </Form.Group>
+
+              <Form.Group className="mb-3" controlId="formBasicPassword">
+                <Form.Label style={{ display: 'flex', justifyContent: 'left', color: 'black' }}>Subject</Form.Label>
+                <div style={{ display: 'flex', justifyContent: 'left' }}>
+                  <textarea style={{ width: '100%', height: '70px', resize: 'none' }} placeholder='Write here..'>
+                  </textarea>
+                </div>
+              </Form.Group>
+              <Button onClick={() => setShow(true)} className="mb-2" variant="primary">
+                Submit
+              </Button>
+            </Form>
+          </Card.Body>
+        </Card>
       </Container>
+
+      <ToastContainer position='top-end' style={{ marginTop: '4%' }}>
+        <Toast className='toastContact' onClose={() => setShow(false)} show={show} delay={2000} autohide>
+          <Toast.Header style={{ backgroundColor: '#0d6efd' }}>
+            <strong className="me-auto" style={{ textAlign: 'left', color: 'white'}}>Alert!</strong>
+          </Toast.Header>
+          <Toast.Body style={{ textAlign: 'left' }}>You're form submitted successfully!</Toast.Body>
+        </Toast>
+      </ToastContainer>
       <Footer />
     </div>
   )
