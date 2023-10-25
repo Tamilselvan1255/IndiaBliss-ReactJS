@@ -67,7 +67,7 @@ const About = () => {
                 </Card.Text>
               </Card.Body>
               <Card.Footer>
-                <Button variant='secondary' className='w-100'>₹4999</Button>
+                <Button style={{padding: "6px 12px"}} variant='primary' className='w-100'>₹4999</Button>
               </Card.Footer>
             </Card>
           </Col>
@@ -90,7 +90,7 @@ const About = () => {
                 </Card.Text>
               </Card.Body>
               <Card.Footer>
-                <Button variant='secondary' className='w-100'>₹4999</Button>
+                <Button variant='primary' className='w-100'>₹4999</Button>
               </Card.Footer>
             </Card>
           </Col>
@@ -113,7 +113,7 @@ const About = () => {
                 </Card.Text>
               </Card.Body>
               <Card.Footer>
-                <Button variant='secondary' className='w-100'>₹4999</Button>
+                <Button variant='primary' className='w-100'>₹4999</Button>
               </Card.Footer>
             </Card>
           </Col>
@@ -136,7 +136,7 @@ const About = () => {
                 </Card.Text>
               </Card.Body>
               <Card.Footer>
-                <Button variant='secondary' className='w-100'>₹4999</Button>
+                <Button variant='primary' className='w-100'>₹4999</Button>
               </Card.Footer>
             </Card>
           </Col>
@@ -162,7 +162,7 @@ const About = () => {
                 </Card.Text>
               </Card.Body>
               <Card.Footer>
-                <Button variant='secondary' className='w-100'>₹4999</Button>
+                <Button variant='primary' className='w-100'>₹4999</Button>
               </Card.Footer>
             </Card>
           </Col>
@@ -185,7 +185,7 @@ const About = () => {
                 </Card.Text>
               </Card.Body>
               <Card.Footer>
-                <Button variant='secondary' className='w-100'>₹4999</Button>
+                <Button variant='primary' className='w-100'>₹4999</Button>
               </Card.Footer>
             </Card>
           </Col>
@@ -208,7 +208,7 @@ const About = () => {
                 </Card.Text>
               </Card.Body>
               <Card.Footer>
-                <Button variant='secondary' className='w-100'>₹4999</Button>
+                <Button variant='primary' className='w-100'>₹4999</Button>
               </Card.Footer>
             </Card>
           </Col>
@@ -231,7 +231,7 @@ const About = () => {
                 </Card.Text>
               </Card.Body>
               <Card.Footer>
-                <Button variant='secondary' className='w-100'>₹4999</Button>
+                <Button variant='primary' className='w-100'>₹4999</Button>
               </Card.Footer>
             </Card>
           </Col>
@@ -257,7 +257,7 @@ const About = () => {
                 </Card.Text>
               </Card.Body>
               <Card.Footer>
-                <Button variant='secondary' className='w-100'>₹4999</Button>
+                <Button variant='primary' className='w-100'>₹4999</Button>
               </Card.Footer>
             </Card>
           </Col>
@@ -280,7 +280,7 @@ const About = () => {
                 </Card.Text>
               </Card.Body>
               <Card.Footer>
-                <Button variant='secondary' className='w-100'>₹4999</Button>
+                <Button variant='primary' className='w-100'>₹4999</Button>
               </Card.Footer>
             </Card>
           </Col>
@@ -303,7 +303,7 @@ const About = () => {
                 </Card.Text>
               </Card.Body>
               <Card.Footer>
-                <Button variant='secondary' className='w-100'>₹4999</Button>
+                <Button variant='primary' className='w-100'>₹4999</Button>
               </Card.Footer>
             </Card>
           </Col>
@@ -326,7 +326,7 @@ const About = () => {
                 </Card.Text>
               </Card.Body>
               <Card.Footer>
-                <Button variant='secondary' className='w-100'>₹4999</Button>
+                <Button variant='primary' className='w-100'>₹4999</Button>
               </Card.Footer>
             </Card>
           </Col>
